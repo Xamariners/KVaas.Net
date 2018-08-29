@@ -10,14 +10,7 @@ namespace KVaas.Net
     public static class KVaaSClient
     {
         private static string HTTP_API_PREFIX = "https://api.keyvalue.xyz";
-
-        private static string USER_AGENT = "api.keyvalue.xyz .Net API/1.0";
         
-        static KVaaSClient()
-        {
-
-        }
-       
         public static async Task<string> NewKey(string key)
         {
             string action = $"new/{key}";
